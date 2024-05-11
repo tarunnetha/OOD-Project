@@ -1,0 +1,17 @@
+file,class,method,variable,usage
+C:\Users\MYPC\Aircraft-Modelling-System-master\Aircraft-Modelling-System-master\test\aircraftdecoration\AircraftKidsDecorationTest.java,aircraftdecoration.AircraftKidsDecorationTest,testRemove/0,ac,2
+C:\Users\MYPC\Aircraft-Modelling-System-master\Aircraft-Modelling-System-master\test\aircraftdecoration\AircraftKidsDecorationTest.java,aircraftdecoration.AircraftKidsDecorationTest,testRemove/0,bac,1
+C:\Users\MYPC\Aircraft-Modelling-System-master\Aircraft-Modelling-System-master\test\aircraftdecoration\AircraftKidsDecorationTest.java,aircraftdecoration.AircraftKidsDecorationTest,testCreateAircraft/0,instance,3
+C:\Users\MYPC\Aircraft-Modelling-System-master\Aircraft-Modelling-System-master\test\aircraftdecoration\AircraftBarDecorationTest.java,aircraftdecoration.AircraftBarDecorationTest,testRemove/0,ac,2
+C:\Users\MYPC\Aircraft-Modelling-System-master\Aircraft-Modelling-System-master\test\aircraftdecoration\AircraftBarDecorationTest.java,aircraftdecoration.AircraftBarDecorationTest,testRemove/0,bac,1
+C:\Users\MYPC\Aircraft-Modelling-System-master\Aircraft-Modelling-System-master\test\aircraftdecoration\AircraftBarDecorationTest.java,aircraftdecoration.AircraftBarDecorationTest,testCreateAircraft/0,instance,3
+C:\Users\MYPC\Aircraft-Modelling-System-master\Aircraft-Modelling-System-master\src\aircraftdecoration\AircraftBarDecoration.java,aircraftdecoration.AircraftBarDecoration,AircraftBarDecoration/1[aircraftdecoration.Aircraft],ac,1
+C:\Users\MYPC\Aircraft-Modelling-System-master\Aircraft-Modelling-System-master\src\aircraftdecoration\AircraftDecorator.java,aircraftdecoration.AircraftDecorator,AircraftDecorator/1[aircraftdecoration.Aircraft],ac,1
+C:\Users\MYPC\Aircraft-Modelling-System-master\Aircraft-Modelling-System-master\test\aircraftdecoration\StandardAircraftTest.java,aircraftdecoration.StandardAircraftTest,testCreateAircraft/0,instance,1
+C:\Users\MYPC\Aircraft-Modelling-System-master\Aircraft-Modelling-System-master\test\aircraftdecoration\StandardAircraftTest.java,aircraftdecoration.StandardAircraftTest,testRemoveExtension/0,result,1
+C:\Users\MYPC\Aircraft-Modelling-System-master\Aircraft-Modelling-System-master\test\aircraftdecoration\StandardAircraftTest.java,aircraftdecoration.StandardAircraftTest,testRemoveExtension/0,instance,2
+C:\Users\MYPC\Aircraft-Modelling-System-master\Aircraft-Modelling-System-master\test\aircraftdecoration\StandardAircraftTest.java,aircraftdecoration.StandardAircraftTest,testRemoveExtension/0,expResult,1
+C:\Users\MYPC\Aircraft-Modelling-System-master\Aircraft-Modelling-System-master\src\aircraftdecoration\AircraftKidsDecoration.java,aircraftdecoration.AircraftKidsDecoration,AircraftKidsDecoration/1[aircraftdecoration.Aircraft],ac,1
+C:\Users\MYPC\Aircraft-Modelling-System-master\Aircraft-Modelling-System-master\src\aircraftdecoration\DriverClass.java,aircraftdecoration.DriverClass,main/1[java.lang.String[]],args,0
+C:\Users\MYPC\Aircraft-Modelling-System-master\Aircraft-Modelling-System-master\src\aircraftdecoration\DriverClass.java,aircraftdecoration.DriverClass,main/1[java.lang.String[]],luxuryAircraft,3
+C:\Users\MYPC\Aircraft-Modelling-System-master\Aircraft-Modelling-System-master\src\aircraftdecoration\DriverClass.java,aircraftdecoration.DriverClass,main/1[java.lang.String[]],testAircraft,10

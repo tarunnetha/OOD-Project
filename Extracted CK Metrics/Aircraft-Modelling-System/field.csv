@@ -1,0 +1,4 @@
+file,class,method,variable,usage
+C:\Users\MYPC\Aircraft-Modelling-System-master\Aircraft-Modelling-System-master\src\aircraftdecoration\AircraftDecorator.java,aircraftdecoration.AircraftDecorator,createAircraft/0,decoratedAircraft,1
+C:\Users\MYPC\Aircraft-Modelling-System-master\Aircraft-Modelling-System-master\src\aircraftdecoration\AircraftDecorator.java,aircraftdecoration.AircraftDecorator,AircraftDecorator/1[aircraftdecoration.Aircraft],decoratedAircraft,1
+C:\Users\MYPC\Aircraft-Modelling-System-master\Aircraft-Modelling-System-master\src\aircraftdecoration\AircraftDecorator.java,aircraftdecoration.AircraftDecorator,removeExtension/0,decoratedAircraft,1

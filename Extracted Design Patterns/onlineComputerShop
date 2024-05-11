@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system>
+	<pattern name="Factory Method">
+		<instance>
+			<role name="Creator" element="edu.ijse.absd.onlnecmpshp.dao.UserDao" />
+			<role name="FactoryMethod()" element="edu.ijse.absd.onlnecmpshp.dao.UserDao::select(edu.ijse.absd.onlnecmpshp.model.UserModel):edu.ijse.absd.onlnecmpshp.model.UserModel" />
+		</instance>
+	</pattern>
+	<pattern name="Prototype" />
+	<pattern name="Singleton">
+		<instance>
+			<role name="Singleton" element="edu.ijse.absd.onlnecmpshp.dao.DaoFactory" />
+			<role name="uniqueInstance" element="edu.ijse.absd.onlnecmpshp.dao.DaoFactory::daoFactory:edu.ijse.absd.onlnecmpshp.dao.DaoFactory" />
+		</instance>
+		<instance>
+			<role name="Singleton" element="edu.ijse.absd.onlnecmpshp.service.ServiceFactory" />
+			<role name="uniqueInstance" element="edu.ijse.absd.onlnecmpshp.service.ServiceFactory::serviceFactory:edu.ijse.absd.onlnecmpshp.service.ServiceFactory" />
+		</instance>
+	</pattern>
+	<pattern name="(Object)Adapter">
+		<instance>
+			<role name="Adaptee" element="edu.ijse.absd.onlnecmpshp.dao.ItemDao" />
+			<role name="Adapter" element="edu.ijse.absd.onlnecmpshp.service.impl.AdminServiceImpl" />
+			<role name="adaptee" element="edu.ijse.absd.onlnecmpshp.service.impl.AdminServiceImpl::itemDao:edu.ijse.absd.onlnecmpshp.dao.ItemDao" />
+			<role name="Request()" element="edu.ijse.absd.onlnecmpshp.service.impl.AdminServiceImpl::saveItem(edu.ijse.absd.onlnecmpshp.dto.ItemDto):boolean" />
+			<role name="Request()" element="edu.ijse.absd.onlnecmpshp.service.impl.AdminServiceImpl::editItem(edu.ijse.absd.onlnecmpshp.dto.ItemDto):boolean" />
+			<role name="Request()" element="edu.ijse.absd.onlnecmpshp.service.impl.AdminServiceImpl::deleteItem(edu.ijse.absd.onlnecmpshp.dto.ItemDto):boolean" />
+		</instance>
+		<instance>
+			<role name="Adaptee" element="edu.ijse.absd.onlnecmpshp.dao.UserDao" />
+			<role name="Adapter" element="edu.ijse.absd.onlnecmpshp.service.impl.AdminServiceImpl" />
+			<role name="adaptee" element="edu.ijse.absd.onlnecmpshp.service.impl.AdminServiceImpl::userDao:edu.ijse.absd.onlnecmpshp.dao.UserDao" />
+			<role name="Request()" element="edu.ijse.absd.onlnecmpshp.service.impl.AdminServiceImpl::saveUser(edu.ijse.absd.onlnecmpshp.dto.UserDto):boolean" />
+			<role name="Request()" element="edu.ijse.absd.onlnecmpshp.service.impl.AdminServiceImpl::editUser(edu.ijse.absd.onlnecmpshp.dto.UserDto):boolean" />
+			<role name="Request()" element="edu.ijse.absd.onlnecmpshp.service.impl.AdminServiceImpl::removeUser(edu.ijse.absd.onlnecmpshp.dto.UserDto):boolean" />
+		</instance>
+	</pattern>
+	<pattern name="Command" />
+	<pattern name="Composite" />
+	<pattern name="Decorator" />
+	<pattern name="Observer" />
+	<pattern name="State" />
+	<pattern name="Strategy" />
+	<pattern name="Bridge" />
+	<pattern name="Template Method" />
+	<pattern name="Visitor" />
+	<pattern name="Proxy" />
+	<pattern name="Proxy2" />
+	<pattern name="Chain of Responsibility" />
+</system>
+

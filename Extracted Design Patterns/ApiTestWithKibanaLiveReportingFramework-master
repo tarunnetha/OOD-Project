@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system>
+	<pattern name="Factory Method" />
+	<pattern name="Prototype" />
+	<pattern name="Singleton">
+		<instance>
+			<role name="Singleton" element="com.Utilities.ConfigParser" />
+			<role name="uniqueInstance" element="com.Utilities.ConfigParser::configParser:com.Utilities.ConfigParser" />
+		</instance>
+		<instance>
+			<role name="Singleton" element="com.Utilities.DataPool" />
+			<role name="uniqueInstance" element="com.Utilities.DataPool::dataPool:com.Utilities.DataPool" />
+		</instance>
+	</pattern>
+	<pattern name="(Object)Adapter" />
+	<pattern name="Command" />
+	<pattern name="Composite" />
+	<pattern name="Decorator" />
+	<pattern name="Observer" />
+	<pattern name="State" />
+	<pattern name="Strategy" />
+	<pattern name="Bridge" />
+	<pattern name="Template Method" />
+	<pattern name="Visitor" />
+	<pattern name="Proxy" />
+	<pattern name="Proxy2" />
+	<pattern name="Chain of Responsibility" />
+</system>
+

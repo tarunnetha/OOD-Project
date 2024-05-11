@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system>
+	<pattern name="Factory Method" />
+	<pattern name="Prototype" />
+	<pattern name="Singleton" />
+	<pattern name="(Object)Adapter">
+		<instance>
+			<role name="Adaptee" element="Menu1stLevel$MenuName" />
+			<role name="Adapter" element="Menu1stLevel" />
+			<role name="adaptee" element="Menu1stLevel::choices:Menu1stLevel$MenuName" />
+			<role name="Request()" element="Menu1stLevel::setupAndDisplayMenu():void" />
+			<role name="Request()" element="Menu1stLevel::runNextMenuOrAction():void" />
+		</instance>
+	</pattern>
+	<pattern name="Command">
+		<instance>
+			<role name="Receiver" element="ChaletBooking" />
+			<role name="ConcreteCommand" element="AddBookingMenuCommand" />
+			<role name="receiver" element="AddBookingMenuCommand::booking:ChaletBooking" />
+			<role name="Execute()" element="AddBookingMenuCommand::execute():void" />
+		</instance>
+		<instance>
+			<role name="Receiver" element="ChaletBooking" />
+			<role name="ConcreteCommand" element="GetBookingMenuCommand" />
+			<role name="receiver" element="GetBookingMenuCommand::booking:ChaletBooking" />
+			<role name="Execute()" element="GetBookingMenuCommand::execute():void" />
+		</instance>
+		<instance>
+			<role name="Receiver" element="Member" />
+			<role name="ConcreteCommand" element="AddMemberMenuCommand" />
+			<role name="receiver" element="AddMemberMenuCommand::member:Member" />
+			<role name="Execute()" element="AddMemberMenuCommand::execute():void" />
+		</instance>
+	</pattern>
+	<pattern name="Composite" />
+	<pattern name="Decorator" />
+	<pattern name="Observer" />
+	<pattern name="State" />
+	<pattern name="Strategy" />
+	<pattern name="Bridge" />
+	<pattern name="Template Method">
+		<instance>
+			<role name="AbstractClass" element="Menu" />
+			<role name="TemplateMethod()" element="Menu::displayMenu():int" />
+		</instance>
+	</pattern>
+	<pattern name="Visitor" />
+	<pattern name="Proxy" />
+	<pattern name="Proxy2" />
+	<pattern name="Chain of Responsibility" />
+</system>
+

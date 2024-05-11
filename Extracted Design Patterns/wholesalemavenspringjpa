@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system>
+	<pattern name="Factory Method" />
+	<pattern name="Prototype" />
+	<pattern name="Singleton">
+		<instance>
+			<role name="Singleton" element="lk.ijse.dep.UtilityClasses.DBConnection" />
+			<role name="uniqueInstance" element="lk.ijse.dep.UtilityClasses.DBConnection::objref:lk.ijse.dep.UtilityClasses.DBConnection" />
+		</instance>
+		<instance>
+			<role name="Singleton" element="lk.ijse.dep.UtilityClasses.EntityManagerUtil" />
+			<role name="uniqueInstance" element="lk.ijse.dep.UtilityClasses.EntityManagerUtil::entityManagerUtil:lk.ijse.dep.UtilityClasses.EntityManagerUtil" />
+		</instance>
+	</pattern>
+	<pattern name="(Object)Adapter">
+		<instance>
+			<role name="Adaptee" element="lk.ijse.dep.DAO.DAO.custom.CustomerDAO" />
+			<role name="Adapter" element="lk.ijse.dep.Business.impl.CustomerBOImpl" />
+			<role name="adaptee" element="lk.ijse.dep.Business.impl.CustomerBOImpl::customerDAO:lk.ijse.dep.DAO.DAO.custom.CustomerDAO" />
+			<role name="Request()" element="lk.ijse.dep.Business.impl.CustomerBOImpl::allCustomers():java.util.List" />
+			<role name="Request()" element="lk.ijse.dep.Business.impl.CustomerBOImpl::saveCustomer(lk.ijse.dep.DTO.CustomerDTO):void" />
+			<role name="Request()" element="lk.ijse.dep.Business.impl.CustomerBOImpl::deleteCustomer(java.lang.String):void" />
+			<role name="Request()" element="lk.ijse.dep.Business.impl.CustomerBOImpl::customerExistsinOrder(java.lang.String):boolean" />
+			<role name="Request()" element="lk.ijse.dep.Business.impl.CustomerBOImpl::updateCustomer(lk.ijse.dep.DTO.CustomerDTO):void" />
+		</instance>
+		<instance>
+			<role name="Adaptee" element="lk.ijse.dep.DAO.custom.Impl.CustomerDAOImpl" />
+			<role name="Adapter" element="lk.ijse.dep.Business.impl.OrderBOImpl" />
+			<role name="adaptee" element="lk.ijse.dep.Business.impl.OrderBOImpl::customerDAO:lk.ijse.dep.DAO.custom.Impl.CustomerDAOImpl" />
+			<role name="Request()" element="lk.ijse.dep.Business.impl.OrderBOImpl::getAllCustomerId(javafx.collections.ObservableList):javafx.collections.ObservableList" />
+		</instance>
+		<instance>
+			<role name="Adaptee" element="lk.ijse.dep.DAO.custom.Impl.ItemDAOImpl" />
+			<role name="Adapter" element="lk.ijse.dep.Business.impl.ItemBOImpl" />
+			<role name="adaptee" element="lk.ijse.dep.Business.impl.ItemBOImpl::itemDAO:lk.ijse.dep.DAO.custom.Impl.ItemDAOImpl" />
+			<role name="Request()" element="lk.ijse.dep.Business.impl.ItemBOImpl::getAllItems():java.util.List" />
+			<role name="Request()" element="lk.ijse.dep.Business.impl.ItemBOImpl::saveItem(lk.ijse.dep.DTO.ItemDTO):void" />
+			<role name="Request()" element="lk.ijse.dep.Business.impl.ItemBOImpl::deleteItem(java.lang.String):void" />
+			<role name="Request()" element="lk.ijse.dep.Business.impl.ItemBOImpl::itemExistsinOrder(java.lang.String):boolean" />
+			<role name="Request()" element="lk.ijse.dep.Business.impl.ItemBOImpl::updateItem(lk.ijse.dep.DTO.ItemDTO):void" />
+		</instance>
+		<instance>
+			<role name="Adaptee" element="lk.ijse.dep.DAO.custom.Impl.ItemDAOImpl" />
+			<role name="Adapter" element="lk.ijse.dep.Business.impl.OrderBOImpl" />
+			<role name="adaptee" element="lk.ijse.dep.Business.impl.OrderBOImpl::itemDAO:lk.ijse.dep.DAO.custom.Impl.ItemDAOImpl" />
+			<role name="Request()" element="lk.ijse.dep.Business.impl.OrderBOImpl::allItems():java.util.List" />
+		</instance>
+		<instance>
+			<role name="Adaptee" element="lk.ijse.dep.DAO.custom.Impl.OrderDetailsDAOImpl" />
+			<role name="Adapter" element="lk.ijse.dep.Business.impl.OrderBOImpl" />
+			<role name="adaptee" element="lk.ijse.dep.Business.impl.OrderBOImpl::orderDetailsDAO:lk.ijse.dep.DAO.custom.Impl.OrderDetailsDAOImpl" />
+			<role name="Request()" element="lk.ijse.dep.Business.impl.OrderBOImpl::qtyGetByCode(java.lang.String):java.lang.String" />
+			<role name="Request()" element="lk.ijse.dep.Business.impl.OrderBOImpl::insertOrderDetails(lk.ijse.dep.DTO.OrderDetailsDTO):void" />
+		</instance>
+		<instance>
+			<role name="Adaptee" element="lk.ijse.dep.DAO.DAO.custom.OrderItemsDAO" />
+			<role name="Adapter" element="lk.ijse.dep.Business.impl.ItemBOImpl" />
+			<role name="adaptee" element="lk.ijse.dep.Business.impl.ItemBOImpl::orderDetailsDAO:lk.ijse.dep.DAO.DAO.custom.OrderItemsDAO" />
+			<role name="Request()" element="lk.ijse.dep.Business.impl.ItemBOImpl::itemExistsinOrder(java.lang.String):boolean" />
+		</instance>
+		<instance>
+			<role name="Adaptee" element="lk.ijse.dep.DAO.custom.Impl.OrderItemsDAOImpl" />
+			<role name="Adapter" element="lk.ijse.dep.Business.impl.OrderBOImpl" />
+			<role name="adaptee" element="lk.ijse.dep.Business.impl.OrderBOImpl::dao:lk.ijse.dep.DAO.custom.Impl.OrderItemsDAOImpl" />
+			<role name="Request()" element="lk.ijse.dep.Business.impl.OrderBOImpl::insertOrderItems(lk.ijse.dep.DTO.OrderDetailsDTO):void" />
+			<role name="Request()" element="lk.ijse.dep.Business.impl.OrderBOImpl::updateItemQty(java.lang.String, java.lang.String):void" />
+			<role name="Request()" element="lk.ijse.dep.Business.impl.OrderBOImpl::allItems():java.util.List" />
+		</instance>
+	</pattern>
+	<pattern name="Command" />
+	<pattern name="Composite" />
+	<pattern name="Decorator" />
+	<pattern name="Observer" />
+	<pattern name="State">
+		<instance>
+			<role name="Context" element="lk.ijse.dep.Controller.CustomerManageController" />
+			<role name="State" element="lk.ijse.dep.Business.custom.CustomerBO" />
+			<role name="state" element="lk.ijse.dep.Controller.CustomerManageController::cusBo:lk.ijse.dep.Business.custom.CustomerBO" />
+			<role name="Request()" element="lk.ijse.dep.Controller.CustomerManageController::initialize():void" />
+		</instance>
+		<instance>
+			<role name="Context" element="lk.ijse.dep.Business.impl.CustomerBOImpl" />
+			<role name="State" element="lk.ijse.dep.DAO.DAO.custom.CustomerDAO" />
+			<role name="state" element="lk.ijse.dep.Business.impl.CustomerBOImpl::customerDAO:lk.ijse.dep.DAO.DAO.custom.CustomerDAO" />
+			<role name="Request()" element="lk.ijse.dep.Business.impl.CustomerBOImpl::allCustomers():java.util.List" />
+			<role name="Request()" element="lk.ijse.dep.Business.impl.CustomerBOImpl::saveCustomer(lk.ijse.dep.DTO.CustomerDTO):void" />
+			<role name="Request()" element="lk.ijse.dep.Business.impl.CustomerBOImpl::deleteCustomer(java.lang.String):void" />
+			<role name="Request()" element="lk.ijse.dep.Business.impl.CustomerBOImpl::customerExistsinOrder(java.lang.String):boolean" />
+			<role name="Request()" element="lk.ijse.dep.Business.impl.CustomerBOImpl::updateCustomer(lk.ijse.dep.DTO.CustomerDTO):void" />
+		</instance>
+	</pattern>
+	<pattern name="Strategy" />
+	<pattern name="Bridge" />
+	<pattern name="Template Method" />
+	<pattern name="Visitor" />
+	<pattern name="Proxy" />
+	<pattern name="Proxy2" />
+	<pattern name="Chain of Responsibility" />
+</system>
+
